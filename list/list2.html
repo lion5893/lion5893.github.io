@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu 2 cấp</title>
+	<meta charset="utf-8"/>
+	<style>
+		/*Bỏ dấu tròn trước menu */
+		#menu {
+			list-style-type: none;
+		}
+		/*Cho menu dàn thành hàng ngang */
+		#menu > li {
+			float: left;
+		}
+		/*Ẩn các menu cấp 2*/
+		#menu > li > ul {
+			list-style-type: none;
+			display: none; 
+			/* Ẩn 1 phần tử, phần tử biến mất hẳn khỏi layout.*/
+		}
+		/* Hiển thị menu cấp 2 khi di chuột vào */
+		#menu > li:hover > ul {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<ul id="menu">
+		<li><a href="/">Trang chủ</a></li>
+		<li><a href="/about.html">About</a></li>
+		<li>
+			<a href="/khoa-hoc.html">Khóa học</a>
+			<ul>
+				<li><a href="#">HTML</a></li>
+				<li><a href="#">PHP</a></li>
+				<li><a href="#">NODEJS</a></li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>
