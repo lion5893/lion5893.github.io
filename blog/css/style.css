@@ -1,0 +1,19 @@
+img{
+	width: 400px;
+
+}
+p{
+	height: 1000px;
+}
+a:link{
+	color: #82c34a;
+}
+a:visited{
+	color: blue;
+}
+a:hover{
+	color: black;
+}
+a:active{
+	color: #69a437;
+}

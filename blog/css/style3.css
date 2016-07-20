@@ -1,0 +1,40 @@
+body {
+	background-color: #E5E5E5;
+	margin: 0;
+	padding: 0;
+}
+h1{
+	color: #404040;
+	font-size: 24px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+img{
+	width: 100%;	
+	max-height: 300px;
+}
+#main-menu a{
+	font-size: 20px;
+	color: #737373;
+	text-decoration: none;
+	padding: 15px;
+}
+#main-menu a:hover, #main-menu a.active{
+	color: black;
+}
+#main-menu a.active{
+	font-weight: bold;
+}
+
+
+.wrap{
+	max-width: 1000px;
+	margin: auto;
+}
+#main-menu{
+	position: relative;
+	background-color: #ffffff;
+	text-align: center;
+	padding: 15px;
+
+}

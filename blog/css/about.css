@@ -1,0 +1,26 @@
+.box{
+	padding: 15px;	
+	border: 1px solid #dddddd;
+	border-top-width: 5px;
+	float: left;
+	width: 33.3333333%;
+	box-sizing: border-box;
+}
+.info{
+	border-color: orange;
+}
+.contact{
+	border-color: green;
+}
+.company{
+	border-color: red;
+}
+.info span {
+	color: orange;
+}
+.contact span {
+	color: green;
+}
+.company span {
+	color: red;
+}
