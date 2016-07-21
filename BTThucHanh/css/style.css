@@ -1,0 +1,35 @@
+
+
+body{
+	background-color: #E5E5E5;
+	margin: 0px;
+	padding: 0px;
+	
+}
+.wrap{
+	
+	max-width: 1000px;
+	margin: auto;
+	
+}
+.box{	
+	float: left;	
+	text-align: center;
+	margin:5px;
+	width: 32%;		
+}
+.box img{
+	border: 3px solid #ffffff;
+	width: 100%;
+	height:200px; 
+}
+.box h3{
+	margin-top: 2px;
+}
+.box a{
+	text-decoration: none;
+
+}
+.box a:hover{
+	color: red
+}

@@ -1,0 +1,37 @@
+body{
+	background-color: #E5E5E5;
+	margin: 0px;
+	padding: 0px;
+	
+}
+.wrap{
+	max-width: 1000px;
+	margin: auto;
+}
+
+img{
+	max-width: 500px;
+	height: 350px;
+	border: 3px solid white;
+}
+.anhsp {
+	float:left;
+	margin: 15px;
+}
+.thongtinsp{
+	font-size: 25px;
+	padding-top: 50px;
+
+}
+.sp1{
+	border-bottom: 1px solid orange;
+	height: 390px;
+}
+.sp2{
+	border-bottom: 1px solid orange;
+	height: 390px;
+}
+.sp3{
+	border-bottom: 1px solid orange;
+	height: 390px;
+}
