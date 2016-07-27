@@ -1,0 +1,18 @@
+.box img{
+	border: 3px solid orange;
+}
+.row{
+	margin-bottom: 10px;
+}
+.box h3{
+	margin-top: 10px;
+	font-size: 18px;
+}
+.box{
+	text-align: center;
+}
+footer {
+	border-top: 1px solid #c5c5c5;
+	margin-top: 10px;
+	text-align: center;
+}
