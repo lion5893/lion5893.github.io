@@ -1,18 +1,39 @@
-.box img{
-	border: 3px solid orange;
-}
 .row{
 	margin-bottom: 10px;
+}
+.box{
+	text-align: center;
+
+	
+
 }
 .box h3{
 	margin-top: 10px;
 	font-size: 18px;
 }
-.box{
-	text-align: center;
+.box img{
+	border: 3px solid orange;	
+
+	
 }
+.box img:hover{
+	opacity: 0.8;
+	transition: all 0.5s linear;
+	transform: translate(0,-5px);
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+
+}
+
 footer {
 	border-top: 1px solid #c5c5c5;
-	margin-top: 10px;
+	padding: 10px;
 	text-align: center;
+	animation: title 15s ease infinite;
+}
+@keyframes title {
+	0%  { color: #F9E559;}
+	25%  { color: black;}
+	50%  { color: green;}
+	75%  { color: blue;}
+	100% { color: #F99;}
 }
