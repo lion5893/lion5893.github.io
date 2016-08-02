@@ -83,9 +83,7 @@ body{
    
     text-align: center;
 }
-.email{
-    margin:auto;
-}
+/*
 .form_control{
         background-color: #f0f0f0;
         border:none;
@@ -96,8 +94,16 @@ body{
         font-size: 14px;
         float: left;   
         width: 100%;
-         
-        text-align: center;   
+        margin: auto;
+        display: block;
+
+        
+}
+*/
+.form_control{
+     margin: auto;
+        display: block;
+
 }
 .line{
     background-color: black;
@@ -122,4 +128,13 @@ body{
 footer {
     background-color: #f0f0f0;
     height: 100px;
+}
+.email img{
+    position: absolute;
+    left: 850px;
+    top: -12px;
+    margin: auto;
+}
+.email{
+    position: relative;
 }
