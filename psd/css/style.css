@@ -83,34 +83,13 @@ body{
    
     text-align: center;
 }
-/*
 .form_control{
-        background-color: #f0f0f0;
-        border:none;
-        width: 370px;
-        height: 34px;
-        padding: 6px 12px;
-        font-family: 'playfair_displayregular';
-        font-size: 14px;
-        float: left;   
-        width: 100%;
-        margin: auto;
-        display: block;
-
-        
-}
-*/
-.form_control{
-     margin: auto;
-        display: block;
-
-}
-.line{
-    background-color: black;
-    height: 2px;
-    width: 420px;
-    margin-left: 39%;
-    margin-top: -10px;
+    margin: auto;  
+    background-color: #f0f0f0;
+    border:none;
+    width: 300px;
+    border-bottom: 1px solid black;
+    padding: 5px;
 }
 .load_more{
     width: 175px;
@@ -131,10 +110,28 @@ footer {
 }
 .email img{
     position: absolute;
-    left: 850px;
+    right: 0;
     top: -12px;
     margin: auto;
 }
 .email{
     position: relative;
+    width: 300px;
+    margin: auto;
+}
+footer .navbar-default {
+    background-color: #f0f0f0; 
+     border-color: #f0f0f0; 
+     margin-top: 30px;
+}
+footer .nav>li>a{
+   padding: 10px 13px; 
+}
+.panel_footer{
+
+    margin-top: 40px;
+}
+.panel_footer a{
+    color: #777;
+    padding: 0px 18px;
 }
