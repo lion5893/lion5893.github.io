@@ -29,6 +29,9 @@ body{
     background-color: #ffffff; 
      border-color: #ffffff; 
 }
+#banner{
+    margin-bottom: 50px;
+}
 @media (min-width: 1200px){
     .container {
     width: 1062px;
@@ -55,7 +58,7 @@ body{
     color: #b4ad9e;
 }
 .description h3{
-    margin-top: 100px;
+    
     margin-bottom: 30px;
 }
 .title{
@@ -139,19 +142,7 @@ footer {
     color: #777;
     padding: 0px 5px;  
 }
-@media (max-width: 515px){
-    .panel_footer .col-xs-6, .panel_footer .pull-right{
-        width: 100%;   
-        float:left; 
-    }
-    .panel_footer{
-    padding: 0px 40px;
-    }
-    .main-content{
-        padding: 0px 40px;
-    }
 
-}
 
 /*post full width*/
 /*post detail*/
@@ -183,10 +174,7 @@ footer {
     font-size: 18px;
 }
 /*comment*/
-.comment{
-    padding-left: 80px;
-    padding-right: 80px;
-}
+
 .quantity_comment{
     margin: 50px 0 45px 0;
 }
@@ -200,7 +188,87 @@ footer {
 }
 
 .comment .connect .pull-right{
-    margin: -35px 0 30px;
+    margin: -20px 20px 30px;
 }
 
+.discussion .form_control{
+    width: 100%;
+    margin-top: 10px;
+}
+.avt{
+    width: 70px;
+    height: 70px;
+    background-color: #84FFB8;
+    color: #fff;
+    border-radius: 50%;
+    padding: 20px 25px;
+    font-size: 20px;
+    
+ 
+}
+
+/*side bar*/
+.sidebar img{
+    margin-top: 20px;
+}
+.content_sidebar{
+    padding-left: 80px;
+}
+
+.sidebar .title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.sidebar .link_info{
+    margin-bottom:70px;
+    
+}
+.top_post ul{
+    padding-left: 0px;
+}
+.top_post li a{
+    font-size: 16px;
+    
+    color: #626262;
+}
+.top_post li{
+    margin:20px;
+}
+.top_post .tag{
+    font-size: 14px;
+    }
+.sidebar .banner_spot{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.sidebar .comment{
+font-size: 12px;
+margin-top: -15px;
+margin-left: 20px;
+
+}
+
+@media (max-width: 768px){
+    .panel_footer .col-xs-6, .panel_footer .pull-right{
+        width: 100%;   
+        float:left; 
+    }
+    .panel_footer{
+    padding: 0px 30px;
+    }
+    .main-content{
+        padding: 0px 30px;
+    }
+    .post_suggest .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    }   
+    .content_sidebar{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+}
 
