@@ -82,11 +82,12 @@ $(document).ready(function(){
 	// In ra kết quả
 	$('.rs_name').text(arr_rs[0]);
 	$('.rs_pass').text(arr_rs[1]);
-	$('.rs_born').text(arr_rs[2]);
-	$('.rs_gender').text(arr_rs[3]);
-	$('.rs_email').text(arr_rs[4]);
-	$('.rs_address').text(arr_rs[5]);
-	$('.rs_phone').text(arr_rs[6]);
+	$('.rs_confirm_pass').text(arr_rs[2])
+	$('.rs_born').text(arr_rs[3]);
+	$('.rs_gender').text(arr_rs[4]);
+	$('.rs_email').text(arr_rs[5]);
+	$('.rs_address').text(arr_rs[6]);
+	$('.rs_phone').text(arr_rs[7]);
 
 })
 
