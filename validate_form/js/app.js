@@ -39,22 +39,26 @@ $(document).ready(function(){
 	// confirm password
 	$('.form_register').validate({
 		rules: {
-			password: {				
-				minlength: 5
-			},
-			confirm_password: {				
+			password: {	
+				required: true,			
 				minlength: 5,
-				equalTo: "#password"
+			},
+			confirm_password: {	
+				required: true,		
+				minlength: 5,
+				equalTo: "#password",
 			}
 		},
 		messages: {
 			password: {
+			required: "Password is empty",
 			minlength:	"Mật khẩu từ 5 ký tự trở lên",
 
 		},	
 			confirm_password:{
+				required: "Password is empty",
 				minlength: "Mật khẩu từ 5 ký tự trở lên",
-				equalTo: "Xác nhận mật khẩu không đúng"
+				equalTo: "Xác nhận mật khẩu không đúng",
 			}
 		}
 	}); 
