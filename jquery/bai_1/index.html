@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bai 1</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form method="post" action="">
+		<input type="text" id="message" value="This is a message">
+		<input type="submit" id="click" value="Gửi">
+	</form>
+
+	<script src="../jquery-3.1.0.min.js"></script>
+	<script>
+		$('#click').click(function(){
+			var message = $('#message').val('');
+			alert(message);
+		})
+	</script>
+		
+	
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5 Contact Form</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<form class="form_register" action="result.html" method="get">
+		<ul>
+			<li>
+				<h2>Đăng ký thành viên</h2>
+				<span class="req_notification">* Bắt buộc</span>
+			</li>
+			<li>
+				<label for="name"><span class="req">*</span> Name:</label>
+				<input type="text" name="name" placeholder="Họ tên" id="name" >
+				<span class="error"></span>
+			</li>
+			<li>
+				<label for="password"><span class="req">*</span> Password:</label>
+				<input type="password" name="password" id="password" placeholder="Mật khẩu" required>			
+			</li>
+			<li>
+				<label for="confirm_password"><span class="req">*</span>Confirm Password:</label>
+				<input type="password" name="confirm_password" id="confirm_password" placeholder="Xác nhận mật khẩu" required>					
+			</li>
+			<li>
+				<label for="born"><span class="req">*</span> Ngày Sinh:</label>
+				<input type="date" name="date" id="born" >
+				<span class="form_hint">VD: "05/08/1993"
+				</li>
+				<li >
+					<label for="gender"><span class="req">*</span> Giới Tính</label>
+					<input class="gender" type="radio" name="gender" value="male" >Nam 
+					<input class="gender" type="radio" name="gender" value="female">Nữ
+					<input class="gender" type="radio" name="gender" value="none" checked>Chưa xác định
+
+				</li>
+
+				<li>
+					<label for="email"><span class="req">*</span> Email:</label>
+					<input type="email" name="email" placeholder="john_doe@example.com" id="email" >
+					<span class="error"></span>
+				</li>
+				<li>
+					<label for="address">Address:</label>
+					<input type="text" name="address" id="address" placeholder="Địa chỉ">
+				</li>
+				<li>
+					<label for="telephone">Telephone:</label>
+					<input type="text" name="telephone" placeholder="Số điện thoại" id="telephone"><span class="error"></span>					
+				</li>
+
+				<li>
+					<button class="submit" type="submit">Submit Form</button>
+				</li>
+			</ul>
+		</form>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src = "http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+		<script src = "js/app.js"></script>
+
+
+	</body>
+	</html>

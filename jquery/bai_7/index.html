@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 7: Form</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form id="form_contact" method="get" action="">
+		<table border="1" cellspacing="0" cellpadding="10" >
+			<tr>
+				<td>Tên</td>
+				<td><input type="text" name="fullname"></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="text" name="email"></td>
+			</tr>
+			<tr>
+				<td>Phone</td>
+				<td><input type="text" name="phone"></td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><input type="text" name="address"></td>
+			</tr>
+			<tr>
+				<td>Giới tính</td>
+				<td>
+					<input type="radio" name="gender" value="1"> Nam <br>
+					<input type="radio" name="gender" value="2"> Nữ <br>
+				</td>
+			</tr>
+			<tr>
+				<td>Sở thích</td>
+				<td>
+					<input type="checkbox" name="hobby" value="0">Đi chơi <br>
+					<input type="checkbox" name="hobby" value="1">Xem Phim<br>
+					<input type="checkbox" name="hobby" value="2">Đi ăn<br>
+					<input type="checkbox" name="hobby" value="3">Đi du lịch<br>
+					<input type="checkbox" name="hobby" value="4">Lập trình<br>
+				</td>
+			</tr>
+			<tr>
+				<td>Kết Quả</td>
+				<td><b id="result"></b></td>
+			</tr>		
+		</table>
+		<input type="submit" value="Get info">	
+	</form>
+
+	<script src="../jquery-3.1.0.min.js"></script>
+	<script src="app.js"></script>
+
+</body>
+</html>
