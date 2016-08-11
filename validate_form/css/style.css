@@ -85,7 +85,7 @@ button.submit:hover {
 	opacity:.85;
 	cursor: pointer;
 }
-
+/*error*/
 label.error{
 	float: right;
 	width: 322px;
