@@ -1,0 +1,54 @@
+﻿
+
+/*************************
+*******Header CSS******
+**************************/
+/*Header Top*/
+.header_top {
+  background-color:  #F0F0E9;
+}
+.contactinfo ul li:first-child{
+    margin-left: -15px;
+}
+
+.contactinfo ul li a{
+  font-size: 12px;
+  color: #696763;
+}
+.contactinfo ul li a:hover{
+  background:inherit;
+}
+.social-icons ul li a {
+  color: #696763;
+  padding:0px;
+}
+
+.social-icons ul li a i {
+  padding: 11px 15px;
+   transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  -webkit-transition: all 0.9s ease;
+  -o-transition: all 0.9s ease;
+}
+
+.fa-facebook:hover {
+  background: #0083C9;
+}
+
+.fa-twitter:hover  {
+  background:#5BBCEC;
+}
+
+.fa-linkedin:hover  {
+  background:#FF4518;
+}
+
+.fa-dribbble:hover  {
+  background:#90C9DC;
+}
+
+.fa-google-plus:hover  {
+  background:#CE3C2D;
+}
+
+/*Header Middle*/
