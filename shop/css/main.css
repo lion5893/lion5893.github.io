@@ -79,7 +79,7 @@
   background-color: #696763;
 }
 .navbar-toggle .icon-bar {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .main-menu ul li a{
@@ -92,7 +92,7 @@
   padding-left: 15px;
   padding-right: 15px;
 }
- .main-menu ul li a:hover, .main-menu ul li a.active{
+.main-menu ul li a:hover, .main-menu ul li a.active{
   background:none; 
   color: #fdb45e;
 }
@@ -123,7 +123,7 @@
   width: 220px;
   padding: 0;
   margin: 0;
-   
+
 }
 
 .navbar-nav li ul.sub-menu li{
@@ -139,22 +139,54 @@
 }
 
 .navbar-nav li ul.sub-menu li a:hover{
-    color: #FDB45E;
+  color: #FDB45E;
 }
 
+/*left sidebar*/
+.left-sidebar h2{
+  color: #FE980F;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 50px auto 30px;
+}
+.left-sidebar .panel-heading .pull-right{
+  margin-top: -5px;
+}
+.panel.panel-default{
+  border-radius: 0px;
+  border-color: #fff;
+}
+.panel-default .panel-heading{
+  background-color: #fff;
+  color: #696763;
+  
+}
 
+.panel-title{
+  font-weight: 400;
+}
 
+.panel-body ul{
+  list-style: none;
+  padding-left: 15px;
+}
+.panel-body ul li a{
+  color: #696763;
+  font-weight: 300;
 
+}
+.panel{
+  box-shadow: none;
+}
+.category-products{
+  border: 1px solid #F7F7F0;
+}
 
-
-
-
-
-
-
-
-
-
+.panel-body ul li a{
+  text-transform: uppercase;
+}
 
 
 
