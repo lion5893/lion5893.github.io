@@ -1,0 +1,142 @@
+
+/*header top*/
+.header_top{
+  background-color: #11252f;
+}
+.header_top .contactinfo ul li a{
+  color: #D8DCDD;
+  font-size: 12px;
+}
+.header_top .contactinfo ul li a:hover{
+  background: inherit;
+}
+
+.social-icons ul li a{
+  color: #D8DCDD;
+  padding: 0px;  
+}
+.social-icons ul li a i{
+  padding: 11px 15px;
+}
+.social-icons ul li a i:hover{
+  color: #fff;
+  transition: all 0.9s ease;
+}
+.fa-facebook:hover{
+  background-color: #0083C9;
+}
+.fa-youtube-play:hover{
+  background-color: #FF4518;
+}
+.fa-google-plus:hover{
+  background-color: #90C9DC;
+}
+.fa-instagram:hover{
+  background-color: #CE3C2D;
+}
+/*header middle*/
+
+.header_middle{
+  background-color: #183544;
+  border-bottom: 1px solid #0E1F28;
+
+
+}
+.header_middle .col-sm-6{
+  margin-top: 4px;
+}
+.header_middle .container .row{
+  
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.shop-menu ul li a{
+  color: #D8DCDD;
+  font-size:15px;
+}
+
+.shop-menu ul li a:hover{
+  color: orange;
+  background: inherit;
+  transition: all 0.5s ease;
+
+}
+
+.shop-menu ul li{
+  display: inline-block;
+}
+.logo{
+  display: inline-block;
+}
+.logo img{
+  padding-left: 10px;
+  max-height: 40px;
+}
+.search_box{
+      padding-top: 5px;
+}
+.search_box input{
+  background: #F0F0E9;
+  border:none;
+  display: inline-block;
+  color: #B2B2B2;
+  font-weight: 300;
+  height: 30px;
+  width: 350px;
+  padding-left: 10px;
+  outline: medium none;
+  background-image: url(../images/home/searchicon.png);
+  background-repeat: no-repeat;
+  background-position: 330px;
+  
+}
+
+/*header bottom*/
+.header_bottom{
+  background-color: #183544;
+}
+.main-menu ul li a{
+  font-size: 14px;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  color: #fff;
+ } 
+
+.main-menu ul li:hover{
+  background-color: #25526a;
+}
+
+.main-menu ul.nav.navbar-nav{
+  margin-left: -15px;
+}
+.header_bottom .navbar-default{
+  border: none;
+  background: #183544;
+  min-height: 36px;
+  margin-bottom: 0;
+}
+.navbar-default .navbar-nav>li>a:link{
+  color: #ffffff;
+}
+.navbar-default .navbar-nav>li>a:visited{
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+  color: orange;
+  background-color: 25526a;
+  transition: all 0.5s ease;
+}
+/*dropdown menu*/
+.navbar-nav li ul.sub-menu { 
+  background-color: #183544;
+  width: 220px;
+}
+
+.navbar-nav li ul 
+
+
+
+
+
