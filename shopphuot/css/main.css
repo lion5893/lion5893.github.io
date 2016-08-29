@@ -1,0 +1,17 @@
+.fa.fa-shopping-cart{
+	color: orange;
+}
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: green;
+}
+
+.logo{
+	margin-top: 5px;
+}
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+}
