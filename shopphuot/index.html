@@ -19,7 +19,7 @@
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
 								<li><a href="#"><i class="fa fa-phone"></i> +84 123 456 789</a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i> info@domain.com</a></li>						
+								<li><a href="#"><i class="fa fa-envelope"></i> info@domain.com</a></li>           
 							</ul>
 						</div>
 
@@ -28,10 +28,10 @@
 						<div class="social-icons ">
 
 							<ul class="nav nav-pills pull-right ">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>	
-								<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>	
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>	
-								<li><a href="#"><i class="fa fa-instagram"></i></a></li>	
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li> 
+								<li><a href="#"><i class="fa fa-youtube-play"></i></a></li> 
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>  
+								<li><a href="#"><i class="fa fa-instagram"></i></a></li>  
 							</ul>
 						</div>
 					</div>
@@ -54,8 +54,8 @@
 									<button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
 								</span>
 							</div>
-							
-						</div>								
+
+						</div>                
 					</div>
 					<div class="col-sm-1">
 						<div class="cart">
@@ -65,23 +65,24 @@
 					<div class="col-sm-3 hidden-xs">
 						<div class="shop-menu pull-right">
 							<ul class="nav navbar-nav ">
-							
-								<li><a href="#"><i class="fa fa-lock"> Đăng Nhập</i></a></li>		
-								<li><a href="#"><i class="fa fa-registered"> Đăng Ký</i></a></li>	
+
+								<li><a href="#"><i class="fa fa-lock"> Đăng Nhập</i></a></li>   
+								<li><a href="#"><i class="fa fa-registered"> Đăng Ký</i></a></li> 
 							</ul>
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
-			
+
 		</div>
 		<div class="header_bottom">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-12">
+					<!-- Menu PC -->
+					<div class="col-sm-12 hidden-xs">
 						<nav class="navbar navbar-default">
-							
+
 							<div class="navbar-header">
 								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 									<span class="icon-bar"></span>
@@ -92,7 +93,7 @@
 							</div>
 							<div class="collapse navbar-collapse" id="myNavbar">
 								<ul class="nav navbar-nav">
-									<li class="active"><a href="#">Trang chủ</a></li>
+									<li class=""><a href="#">Trang chủ</a></li>
 									<li class="dropdown">
 										<a class="dropdown-toggle" data-toggle="dropdown" href="#">Sản phẩm <span class="caret"></span></a>
 										<ul class="dropdown-menu">
@@ -114,30 +115,127 @@
 									<li><a href="#">Liên hệ</a></li>
 								</ul>
 							</div>
-							
-						</nav>
-					</div>	
-					
-				</div>
 
+						</nav>
+					</div> <!-- Menu Pc End-->
+					 <!-- Menu Mobile -->
+					<div class="col-xs-12 visible-xs">
+						<button type="button" class="btn btn-success " data-toggle="modal" data-target="#myModal">&#9776;</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal" role="dialog">
+							<div class="modal-dialog">
+
+								<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Cungphuot.vn</h4>
+									</div>
+									<div class="modal-body">
+										<div class="panel-group category-products" id="accordion">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a href="#">Đăng ký / Đăng nhập</a>
+													</h4>
+												</div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a href="#">Trang chủ</a>
+													</h4>
+												</div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#accordion" href="#sportswear">Sản phẩm <span class=" pull-right"><i class="fa fa-sort-desc "></i></span></a>
+													</h4>
+												</div>
+												<div id="sportswear" class="panel-collapse collapse">
+													<div class="panel-body">
+														<ul>
+															<li><a href="#">Balo Túi Phượt </a></li>
+															<li><a href="#">Quần Áo </a></li>
+															<li><a href="#">Phụ Kiện </a></li>
+															<li><a href="#">Mũ bảo hiểm</a></li>
+															<li><a href="#">Đồ bảo hộ moto </a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#accordion" href="#mens">Tin tức <span class=" pull-right"><i class="fa fa-sort-desc "></i></span></a>
+													</h4>
+												</div>
+												<div id="mens" class="panel-collapse collapse">
+													<div class="panel-body">
+														<ul>
+															<li><a href="#">Tin khuyến mãi</a></li>
+															<li><a href="#">Chia sẻ kinh nghiệm</a></li>
+															<li><a href="#">Khám phá</a></li> 
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a href="#">Video</a>
+													</h4>
+												</div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title"><a href="#">Giới thiệu</a></h4>
+												</div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title"><a href="#">Liên hệ</a></h4>
+												</div>
+											</div>    
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div><!-- Menu Mobile End-->
+				</div>
 			</div>
 		</div>
 	</header>
 	<section class="slider">
-		
+
 	</section>
 	<section class="main-content">
-		
+
 	</section>
 	<footer id="footer">
-		
+
 	</footer>
-	
+
 
 
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- <script>
+    $(document).ready(function(){
+      $("#myBtn").click(function(){
+        $("#myModal").modal();
+      });
+    });
+</script> -->
 </body>
 </html>

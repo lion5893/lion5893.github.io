@@ -1,5 +1,6 @@
 .fa.fa-shopping-cart{
-	color: orange;
+	color: green;
+	padding-top: 5px;
 }
 .navbar-default .navbar-toggle {
     border-color: #fff;
@@ -14,4 +15,29 @@
 .navbar-default {
     background-color: #fff;
     border-color: #fff;
+}
+.panel-default>.panel-heading{
+	background-color: #fff;
+}
+.panel-default {
+     border-color: #fff; 
+}
+.panel-default ul{
+	padding-left: 10px;
+}
+.panel-default ul li{
+	list-style: none;
+}
+.panel-default ul li a{
+	color: black;
+}
+.header_top{
+	    background-color: #F0F0E9;
+    margin-bottom: 15px;
+}
+.nav-pills>li>a{
+	    color: #696763;
+}
+.nav.navbar-nav li a{
+	color: #2a922a;
 }
