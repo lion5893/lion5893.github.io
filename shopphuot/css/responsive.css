@@ -1,10 +1,139 @@
 
+
+.fa.fa-shopping-cart{
+	color: green;
+	padding-top: 5px;
+}
+.navbar-default .navbar-toggle {
+	border-color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: green;
+}
+
+.logo{
+	margin-top: 5px;
+}
+.navbar-default {
+	background-color: #fff;
+	border-color: #fff;
+}
+.panel-default>.panel-heading{
+	background-color: #fff;
+}
+.panel-default {
+	border-color: #fff; 
+}
+.panel-default ul{
+	padding-left: 10px;
+}
+.panel-default ul li{
+	list-style: none;
+}
+.panel-default ul li a{
+	color: black;
+}
+
+.nav-pills>li>a{
+	color: #fff;
+}
+.nav.navbar-nav li a{
+	color: green;
+}
+.sign-in .nav.navbar-nav li a{
+	color: #005f00;
+}
+.sign-in .nav.navbar-nav li a:hover{
+	background: inherit;
+}
+/*main-content*/
+.new_items .col-xs-3{
+	width: 50%;
+	}
+.new_items h2.title{
+	font-size: 20px;
+	color: green;
+	margin-bottom: 20px;
+}
+.productinfo{
+	padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 480px){
+	.new_items .col-xs-3{
+	width: 33.333333%;
+	}
+	.new_items h2.title{
+	font-size: 24px;
+	color: green;
+}
+}
+
 @media (min-width: 768px){
+	/*header_top*/
+	.header_top{
+		background-color: #067204;
+		margin-bottom: 15px;
+	}
+	.header_top .contactinfo ul li a{
+		color: #fff;
+		font-size: 12px;
+	}
+	.header_top .contactinfo ul li a:hover{
+		background: inherit;
+	}
 
-
+	.social-icons ul li a{
+		color: #fff;
+		padding: 0px;  
+	}
+	.social-icons ul li a i{
+		padding: 11px 15px;
+	}
+	.social-icons ul li a i:hover{
+		color: #fff;
+		transition: all 0.9s ease;
+	}
+	.fa-facebook:hover{
+		background-color: #0083C9;
+	}
+	.fa-youtube-play:hover{
+		background-color: #FF4518;
+	}
+	.fa-google-plus:hover{
+		background-color: #90C9DC;
+	}
+	.fa-instagram:hover{
+		background-color: #CE3C2D;
+	}
+	/*main-content*/
 	
 }
-@media (max-width: 768px) {
+	
+}
+
+@media( min-width: 992px){
+	.new_items .col-xs-3{
+	width: 25%;
+	}
+
+}
+
+
+
+@media (max-width: 767px) {
+
 	.cart{
 		position: absolute;
 		top: -89px;
@@ -36,15 +165,11 @@
 		border-radius: 0;
 	}
 	.modal-header {
-    background-color: green;
-    color: #fff;
-    }
+		background-color: green;
+		color: #fff;
+	}
 
 	.modal-header .close{
 		color: #fff;
 	}
-	
-
-
 }
-
