@@ -59,17 +59,6 @@
 	padding: 15px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 480px){
 	.new_items .col-xs-3{
 	width: 33.333333%;
@@ -121,7 +110,7 @@
 	
 }
 	
-}
+
 
 @media( min-width: 992px){
 	.new_items .col-xs-3{
