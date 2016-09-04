@@ -1,5 +1,8 @@
 
-
+a {
+	color: inherit;
+	
+}
 .fa.fa-shopping-cart{
 	color: green;
 	padding-top: 5px;
@@ -49,7 +52,7 @@
 /*main-content*/
 .new_items .col-xs-3{
 	width: 50%;
-	}
+}
 .new_items h2.title{
 	font-size: 20px;
 	color: green;
@@ -58,15 +61,52 @@
 .productinfo{
 	padding: 15px;
 }
+.productinfo .product-price{
+	font-size: 16px;
+	font-weight: 700;
+	color: green;
+	
+}
+.productinfo .product-name{
+	display: block;
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+.productinfo .product-price .is-strike{
+	color: #999;
+	font-size: 12px;
+	font-weight: 400;
+	text-decoration: line-through;
+}
+.fa-star{
+	color: #F7CD2C;
+}
+.fa-star-half-o{
+	color: #F7CD2C;
+}
+.product-review{
+	margin-bottom: 5px;
+}
+.badge{
+	
+	background-color: orange;
+	color: #fff;
+
+
+}
+
+
+
+
 
 @media (min-width: 480px){
 	.new_items .col-xs-3{
-	width: 33.333333%;
+		width: 33.333333%;
 	}
 	.new_items h2.title{
-	font-size: 24px;
-	color: green;
-}
+		font-size: 24px;
+		color: green;
+	}
 }
 
 @media (min-width: 768px){
@@ -109,12 +149,12 @@
 	/*main-content*/
 	
 }
-	
+
 
 
 @media( min-width: 992px){
 	.new_items .col-xs-3{
-	width: 25%;
+		width: 25%;
 	}
 
 }
