@@ -1,0 +1,144 @@
+/* lg */ 
+@media (min-width: 1200px) {
+
+}
+
+/* md */
+@media (max-width: 991px){
+	.features_items .col-xs-4{
+	width: 50%;
+	}
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (min-width: 768px){
+	.navbar-nav > li:hover > ul.sub-menu{
+		display: block;
+		animation: fadeInUp 400ms;
+	}
+	@-webkit-keyframes fadeInUp {
+		0% {
+			opacity: 0;    
+			transform: translateY(20px);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+	.shipping img{
+	width: 100%;
+	}
+	
+}
+
+/* xs */
+@media (max-width: 767px) {
+	.header_top .col-sm-6:first-child{		
+		
+		float: left;
+	}
+
+	.header_top .col-sm-6:last-child{
+		
+		float: right;
+	}
+	.social-icons ul li a i {
+		padding: 10px 10px;
+	}
+	.contactinfo .nav>li>a{
+		padding: 10px 10px;
+	}
+	.shop-menu .pull-right{
+		float: none !important;
+	}
+	.shop-menu{
+		text-align: center;
+	}
+	.logo{
+		text-align: center;
+	}
+	.shop-menu .navbar-nav{
+		margin: 15.5px -15px;
+	}
+	/*Header bottom*/
+
+
+	.header_bottom .col-sm-9{
+		width: 100%;
+		display: inline-block;
+	}
+	.main-menu{
+		width: 100%;
+	}
+	.main-menu ul li{
+		background: rgba(0, 0, 0, 0.5);
+		padding-top: 15px;
+		padding-bottom: 0;
+	}
+	.main-menu ul li  a{
+		color: #fff;
+	}
+	.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+		background: transparent;
+	}
+	ul.sub-menu li{
+	background: transparent;
+	
+}
+	.header_bottom .row{
+		position: relative;
+	}
+	.header_bottom .col-sm-3 {
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		top: 5px;	
+	}
+	.features_items {
+		margin-top: 30px;
+
+	}
+
+}
+
+
+/* XS Portrait */
+@media (max-width: 480px) {	
+	.header_top .col-sm-6:first-child{
+
+		float: none;
+	}
+
+	.header_top .col-sm-6:last-child{
+		
+		float: none;
+	}
+
+	.contactinfo .nav.nav-pills, .social-icons .nav.nav-pills{
+		display: inline-block;
+	}	
+	.social-icons .pull-right{
+		float: none !important;
+		
+	}
+	.contactinfo{
+		text-align: center;
+	}
+
+	.social-icons{
+		text-align: center;
+	}
+	.shop-menu .nav>li>a{
+		padding: 3px;
+	}	
+	
+}
+
