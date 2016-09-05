@@ -60,6 +60,7 @@ a {
 }
 .productinfo{
 	padding: 15px;
+	display: none;
 }
 .productinfo .product-price{
 	font-size: 16px;
@@ -68,10 +69,17 @@ a {
 	
 }
 .productinfo .product-name{
-	display: block;
+	overflow: hidden;	
 	font-size: 15px;
 	margin-bottom: 5px;
+	height: 40px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
 }
+
+
 .productinfo .product-price .is-strike{
 	color: #999;
 	font-size: 12px;
@@ -91,10 +99,24 @@ a {
 	
 	background-color: orange;
 	color: #fff;
-
-
+	position: absolute;
+	right: 40px;
+	border-radius: 0;
 }
-
+.loadmore {
+	clear: both;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    color: #33739E;
+    
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #fff;
+    box-shadow: 0 1px 1px #ccc;
+    transition: all 600ms ease-in-out;
+    
+}
 
 
 
