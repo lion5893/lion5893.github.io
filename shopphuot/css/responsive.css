@@ -1,6 +1,7 @@
 
 a {
 	color: inherit;
+	cursor: pointer;
 	
 }
 .fa.fa-shopping-cart{
@@ -53,10 +54,11 @@ a {
 .new_items .col-xs-3, .product-sale .col-xs-3{
 	width: 50%;
 }
-.new_items h2.title, .product-sale h2.title{
+h2.title{
 	font-size: 20px;
 	color: green;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
+	margin-top: 30px;
 }
 .new_items .productinfo{
 	padding: 15px;
@@ -114,6 +116,21 @@ a {
 .loadmore a:visited{
 	color: green;
 }
+.left-sidebar h2.title{
+	font-size: 18px;
+	color: green;
+	margin-bottom: 10px;
+}
+.panel-default>.panel-heading{
+	padding-left: 5px;
+}
+.product-hot .col-xs-3{
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+.product-sale h2.title{
+	margin-bottom: 30px;
+}
 /*footer*/
 .footer-head{
 	background-color: #f5f5f5;
@@ -139,11 +156,6 @@ a {
 .product-sale{
 	margin-bottom: 15px;
 }
-.left-sidebar h2.title{
-	font-size: 18px;
-	color: green;
-	padding-left: 15px;
-}
 .connect{
 	margin-top: 15px;
 }
@@ -160,6 +172,7 @@ a {
 .connect .fa-youtube-play:hover{
 	background: #fff;
 }
+
 @media (min-width: 480px){
 	.new_items .col-xs-3, .product-sale .col-xs-3{
 		width: 33.333333%;
@@ -215,7 +228,9 @@ a {
 	.footer-head .col-xs-6:first-child{
 		padding-left: 10px;
 	}
-	
+.navbar-default .navbar-collapse{
+	padding-left: 0;
+}
 	
 }
 
@@ -269,5 +284,10 @@ a {
 
 	.modal-header .close{
 		color: #fff;
+	}
+}
+@media(max-width: 480px){
+	.product-hot .col-xs-3{
+		width: 50%;
 	}
 }
