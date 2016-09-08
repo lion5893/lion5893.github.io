@@ -10,4 +10,7 @@ $(document).ready(function(){
             $(".loadmore").hide();
         }
     });
+    $(".register-link").click(function(){
+       $('#myModal').hide();
+    });
 });

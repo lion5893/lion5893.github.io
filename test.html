@@ -5,213 +5,171 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />    
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
-  <style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />  
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">  
+  
+  
+  <style >
     /* external css: flickity.css */
 
     * { box-sizing: border-box; }
 
     body { font-family: sans-serif; }
 
-    .carousel {
-      background: #FAFAFA;
-    }
-
-    .carousel-cell {
-      width: 28%;
-      height: 200px;
+  .carousel-cell {
+      width: 50%;  
       margin-right: 10px;
-      background: #8C8;
       border-radius: 5px;
       counter-increment: carousel-cell;
     }
 
-    /* cell number */
-    .carousel-cell:before {
-      display: block;
-      text-align: center;
-      content: counter(carousel-cell);
-      line-height: 200px;
-      font-size: 80px;
-      color: white;
+  @media screen and (min-width: 480px) {
+      .carousel-cell {
+      width: 33.33333%;  
+      margin-right: 10px;
+      border-radius: 5px;
+      counter-increment: carousel-cell;
     }
+  }
+
+  @media screen and (min-width: 992px) {
+      .carousel-cell {
+      width: 25%;  
+      margin-right: 10px;
+      border-radius: 5px;
+      counter-increment: carousel-cell;
+    }
+  }
+    
+    
+
   </style>
 </head>
 <body>
   <h1>Flickity - contain</h1>
 
   <!-- Flickity HTML init -->
-  <div  data-flickity='{ "contain": true }'>
-    <div class="carousel">
-      <div class="col-xs-3">
-        <div class="productinfo">
-          <span class="badge">-10%</span>
-          <a href="#"><img src="https://phuotstore.net/upload/store/2015-11/ao-giap-than-pro-biker-1.jpg" alt="" class="img-responsive"></a>
-          <a class="product-name">Áo giáp lưới Pro biker</a>
-          <div class="product-price">
-            <span>360.000đ</span>
-            <div class="is-strike">400.000đ</div>
-          </div>
-          <div class="product-review">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>        
-          <a href="#" class="btn btn-default product-button"><i class="fa fa-shopping-cart"></i> Mua hàng</a>
-        </div>
+  <div class="carousel"
+  data-flickity='{ "contain": true, "imagesLoaded": true}'>
 
-      </div>
-      <div class="col-xs-3">
-        <div class="productinfo">
-          <span class="badge">-10%</span>
-          <a href="#"><img src="https://phuotstore.net/upload/store/2015-11/ao-giap-than-pro-biker-1.jpg" alt="" class="img-responsive"></a>
-          <a class="product-name">Áo giáp lưới Pro biker</a>
-          <div class="product-price">
-            <span>360.000đ</span>
-            <div class="is-strike">400.000đ</div>
-          </div>
-          <div class="product-review">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>        
-          <a href="#" class="btn btn-default product-button"><i class="fa fa-shopping-cart"></i> Mua hàng</a>
+  <div class="carousel-cell">
+    <div>
+      <div class="productinfo">
+        <span class="badge">-50%</span>
+        <a href="#"><img src="https://phuotstore.net/upload/store/2015-12/ba-lo-chien-thuat-3d-xanh-linh-1.jpg" alt="" class="img-responsive"></a>
+        <a class="product-name">Balo phượt rằn ri</a>
+        <div class="product-price">
+          <span>150.000đ</span>
+          <div class="is-strike">300.000đ</div>
         </div>
-
-      </div>
-      <div class="col-xs-3">
-        <div class="productinfo">
-          <span class="badge">-10%</span>
-          <a href="#"><img src="https://phuotstore.net/upload/store/2015-11/ao-giap-than-pro-biker-1.jpg" alt="" class="img-responsive"></a>
-          <a class="product-name">Áo giáp lưới Pro biker</a>
-          <div class="product-price">
-            <span>360.000đ</span>
-            <div class="is-strike">400.000đ</div>
-          </div>
-          <div class="product-review">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>        
-          <a href="#" class="btn btn-default product-button"><i class="fa fa-shopping-cart"></i> Mua hàng</a>
-        </div>
-
-      </div>
-      <div class="col-xs-3">
-        <div class="productinfo">
-          <span class="badge">-10%</span>
-          <a href="#"><img src="https://phuotstore.net/upload/store/2015-11/ao-giap-than-pro-biker-1.jpg" alt="" class="img-responsive"></a>
-          <a class="product-name">Áo giáp lưới Pro biker</a>
-          <div class="product-price">
-            <span>360.000đ</span>
-            <div class="is-strike">400.000đ</div>
-          </div>
-          <div class="product-review">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>        
-          <a href="#" class="btn btn-default product-button"><i class="fa fa-shopping-cart"></i> Mua hàng</a>
-        </div>
-
-      </div>
+        <div class="product-review">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>        
+        <a href="#" class="btn btn-default product-button"><i class="fa fa-shopping-cart"></i> Mua hàng</a>
+      </div>        
     </div>
-    <div class="carousel">
-      <div class="col-xs-3">
-        <div class="productinfo">
-          <span class="badge">-10%</span>
-          <a href="#"><img src="https://phuotstore.net/upload/store/2015-11/ao-giap-than-pro-biker-1.jpg" alt="" class="img-responsive"></a>
-          <a class="product-name">Áo giáp lưới Pro biker</a>
-          <div class="product-price">
-            <span>360.000đ</span>
-            <div class="is-strike">400.000đ</div>
-          </div>
-          <div class="product-review">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>        
-          <a href="#" class="btn btn-default product-button"><i class="fa fa-shopping-cart"></i> Mua hàng</a>
-        </div>
-
-      </div>
-      <div class="col-xs-3">
-        <div class="productinfo">
-          <span class="badge">-10%</span>
-          <a href="#"><img src="https://phuotstore.net/upload/store/2015-11/ao-giap-than-pro-biker-1.jpg" alt="" class="img-responsive"></a>
-          <a class="product-name">Áo giáp lưới Pro biker</a>
-          <div class="product-price">
-            <span>360.000đ</span>
-            <div class="is-strike">400.000đ</div>
-          </div>
-          <div class="product-review">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>        
-          <a href="#" class="btn btn-default product-button"><i class="fa fa-shopping-cart"></i> Mua hàng</a>
-        </div>
-
-      </div>
-      <div class="col-xs-3">
-        <div class="productinfo">
-          <span class="badge">-10%</span>
-          <a href="#"><img src="https://phuotstore.net/upload/store/2015-11/ao-giap-than-pro-biker-1.jpg" alt="" class="img-responsive"></a>
-          <a class="product-name">Áo giáp lưới Pro biker</a>
-          <div class="product-price">
-            <span>360.000đ</span>
-            <div class="is-strike">400.000đ</div>
-          </div>
-          <div class="product-review">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>        
-          <a href="#" class="btn btn-default product-button"><i class="fa fa-shopping-cart"></i> Mua hàng</a>
-        </div>
-
-      </div>
-      <div class="col-xs-3">
-        <div class="productinfo">
-          <span class="badge">-10%</span>
-          <a href="#"><img src="https://phuotstore.net/upload/store/2015-11/ao-giap-than-pro-biker-1.jpg" alt="" class="img-responsive"></a>
-          <a class="product-name">Áo giáp lưới Pro biker</a>
-          <div class="product-price">
-            <span>360.000đ</span>
-            <div class="is-strike">400.000đ</div>
-          </div>
-          <div class="product-review">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>        
-          <a href="#" class="btn btn-default product-button"><i class="fa fa-shopping-cart"></i> Mua hàng</a>
-        </div>
-
-      </div>
-    </div>
-
   </div>
+    <div class="carousel-cell">
+    <div >
+      <div class="productinfo">
+        <span class="badge">-50%</span>
+        <a href="#"><img src="https://phuotstore.net/upload/store/2015-12/ba-lo-chien-thuat-3d-xanh-linh-1.jpg" alt="" class="img-responsive"></a>
+        <a class="product-name">Balo phượt rằn ri</a>
+        <div class="product-price">
+          <span>150.000đ</span>
+          <div class="is-strike">300.000đ</div>
+        </div>
+        <div class="product-review">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>        
+        <a href="#" class="btn btn-default product-button"><i class="fa fa-shopping-cart"></i> Mua hàng</a>
+      </div>        
+    </div>
+  </div>
+    <div class="carousel-cell">
+    <div >
+      <div class="productinfo">
+        <span class="badge">-50%</span>
+        <a href="#"><img src="https://phuotstore.net/upload/store/2015-12/ba-lo-chien-thuat-3d-xanh-linh-1.jpg" alt="" class="img-responsive"></a>
+        <a class="product-name">Balo phượt rằn ri</a>
+        <div class="product-price">
+          <span>150.000đ</span>
+          <div class="is-strike">300.000đ</div>
+        </div>
+        <div class="product-review">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>        
+        <a href="#" class="btn btn-default product-button"><i class="fa fa-shopping-cart"></i> Mua hàng</a>
+      </div>        
+    </div>
+  </div>
+    <div class="carousel-cell">
+    <div >
+      <div class="productinfo">
+        <span class="badge">-50%</span>
+        <a href="#"><img src="https://phuotstore.net/upload/store/2015-12/ba-lo-chien-thuat-3d-xanh-linh-1.jpg" alt="" class="img-responsive"></a>
+        <a class="product-name">Balo phượt rằn ri</a>
+        <div class="product-price">
+          <span>150.000đ</span>
+          <div class="is-strike">300.000đ</div>
+        </div>
+        <div class="product-review">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>        
+        <a href="#" class="btn btn-default product-button"><i class="fa fa-shopping-cart"></i> Mua hàng</a>
+      </div>        
+    </div>
+  </div>
+    <div class="carousel-cell">
+    <div >
+      <div class="productinfo">
+        <span class="badge">-50%</span>
+        <a href="#"><img src="https://phuotstore.net/upload/store/2015-12/ba-lo-chien-thuat-3d-xanh-linh-1.jpg" alt="" class="img-responsive"></a>
+        <a class="product-name">Balo phượt rằn ri</a>
+        <div class="product-price">
+          <span>150.000đ</span>
+          <div class="is-strike">300.000đ</div>
+        </div>
+        <div class="product-review">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>        
+        <a href="#" class="btn btn-default product-button"><i class="fa fa-shopping-cart"></i> Mua hàng</a>
+      </div>        
+    </div>
+  </div>
+  
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+<script>
+  // $(document).ready(function(){
+  //   if($(window).width() < 480){
+  //       $(".product-sale .productinfo").slice(0,1).hide();
+  //   }
+  // })
+</script>
 </body>
 </html>

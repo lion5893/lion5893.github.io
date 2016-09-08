@@ -6,135 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />  
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">  
+  
   
   <link href="css/responsive.css" rel="stylesheet">
   <style >
-  .flickity-viewport{
-    height: 300px;
-  }
-  </style>
-</head>
-<body>
+    .modal-header, h4, .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+    }
+    .modal-footer {
+      background-color: #f9f9f9;
+    </style>
+  </head>
+  <body>
+  <a class="register-link" data-toggle="modal"   data-target="#sign-in">Đăng ký / Đăng nhập</a>
 
-  <h1>Flickity - bgLazyLoad</h1>
+    <div class="modal fade" id="sign-in" role="dialog"><!-- Modal register-->
+  <div class="modal-dialog">
 
-  <!-- Flickity HTML init -->
-  <div class="carousel" data-flickity='{ "contain": true }'>
-
-    <div class="col-xs-4">
-
-      <div class="productinfo">
-        <span class="badge">-50%</span>
-        <a href="#"><img src="http://www.popnbaby.com/4858-thickbox/tshirt-marvel-thor-tall-standing.jpg" alt="" class="img-responsive"></a>
-        <a class="product-name">Áo phượt siêu anh hùng Thor</a>
-        <div class="product-price">
-          <span>50.000đ</span>
-          <div class="is-strike">100.000đ</div>
-        </div>
-        <div class="product-review">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-o"></i>
-        </div>        
-        <a href="#" class="btn btn-default product-button"><i class="fa fa-shopping-cart"></i> Mua hàng</a>
+    <!-- Modal content-->
+    <div class="modal-content register">
+      <div class="modal-header" style="padding:35px 50px;">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4><span class="glyphicon glyphicon-lock"></span> Đăng nhập</h4>
       </div>
-
-    </div>
-    <div class="col-xs-4">
-
-      <div class="productinfo">
-        <span class="badge">-50%</span>
-        <a href="#"><img src="http://www.popnbaby.com/4858-thickbox/tshirt-marvel-thor-tall-standing.jpg" alt="" class="img-responsive"></a>
-        <a class="product-name">Áo phượt siêu anh hùng Thor</a>
-        <div class="product-price">
-          <span>50.000đ</span>
-          <div class="is-strike">100.000đ</div>
-        </div>
-        <div class="product-review">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-o"></i>
-        </div>        
-        <a href="#" class="btn btn-default product-button"><i class="fa fa-shopping-cart"></i> Mua hàng</a>
+      <div class="modal-body" style="padding:40px 50px;">
+        <form role="form">
+          <div class="form-group">
+            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Tài khoản</label>
+            <input type="text" class="form-control" id="usrname" placeholder="Điền email">
+          </div>
+          <div class="form-group">
+            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Mật khẩu</label>
+            <input type="text" class="form-control" id="psw" placeholder="Điền password">
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="" checked>Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Đăng nhập</button>
+        </form>
       </div>
-
-    </div>
-    <div class="col-xs-4">
-
-      <div class="productinfo">
-        <span class="badge">-50%</span>
-        <a href="#"><img src="http://www.popnbaby.com/4858-thickbox/tshirt-marvel-thor-tall-standing.jpg" alt="" class="img-responsive"></a>
-        <a class="product-name">Áo phượt siêu anh hùng Thor</a>
-        <div class="product-price">
-          <span>50.000đ</span>
-          <div class="is-strike">100.000đ</div>
-        </div>
-        <div class="product-review">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-o"></i>
-        </div>        
-        <a href="#" class="btn btn-default product-button"><i class="fa fa-shopping-cart"></i> Mua hàng</a>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Hủy bỏ</button>
+        <p>Bạn chưa là thành viên? <a href="#">Đăng ký</a></p>
+        <p>Quên <a href="#">Mật khẩu?</a></p>
       </div>
-
-    </div>
-    <div class="col-xs-4">
-
-      <div class="productinfo">
-        <span class="badge">-50%</span>
-        <a href="#"><img src="http://www.popnbaby.com/4858-thickbox/tshirt-marvel-thor-tall-standing.jpg" alt="" class="img-responsive"></a>
-        <a class="product-name">Áo phượt siêu anh hùng Thor</a>
-        <div class="product-price">
-          <span>50.000đ</span>
-          <div class="is-strike">100.000đ</div>
-        </div>
-        <div class="product-review">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-o"></i>
-        </div>        
-        <a href="#" class="btn btn-default product-button"><i class="fa fa-shopping-cart"></i> Mua hàng</a>
-      </div>
-
-    </div>
-    <div class="col-xs-4">
-
-      <div class="productinfo">
-        <span class="badge">-50%</span>
-        <a href="#"><img src="http://www.popnbaby.com/4858-thickbox/tshirt-marvel-thor-tall-standing.jpg" alt="" class="img-responsive"></a>
-        <a class="product-name">Áo phượt siêu anh hùng Thor</a>
-        <div class="product-price">
-          <span>50.000đ</span>
-          <div class="is-strike">100.000đ</div>
-        </div>
-        <div class="product-review">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-o"></i>
-        </div>        
-        <a href="#" class="btn btn-default product-button"><i class="fa fa-shopping-cart"></i> Mua hàng</a>
-      </div>
-
     </div>
 
-  </div>
+  </div><!-- Modal menu mobile -->
+</div><!-- Modal register End--> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
-</body>
-</html>
+  </body>
+  </html>

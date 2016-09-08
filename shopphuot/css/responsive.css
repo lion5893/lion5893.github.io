@@ -38,7 +38,7 @@ a {
 	color: black;
 }
 
-.nav-pills>li>a{
+.header_top.nav-pills>li>a{
 	color: #fff;
 }
 .nav.navbar-nav li a{
@@ -46,9 +46,17 @@ a {
 }
 .sign-in .nav.navbar-nav li a{
 	color: #005f00;
+	padding-left: 3px;
+	padding-right: 3px;
 }
 .sign-in .nav.navbar-nav li a:hover{
 	background: inherit;
+}
+.header_bottom .nav.navbar-nav li a {
+    color: #077307;
+}
+.header_bottom .nav.navbar-nav li a:visited{
+	background: #fff;
 }
 /*main-content*/
 .new_items .col-xs-3, .product-sale .col-xs-3{
@@ -75,10 +83,10 @@ h2.title{
 	font-size: 15px;
 	margin-bottom: 5px;
 	height: 40px;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-   -webkit-box-orient: vertical;
-   -webkit-line-clamp: 2;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
 }
 
 
@@ -107,11 +115,11 @@ h2.title{
 }
 .loadmore {
 	clear: both;
-    padding: 10px;
-    text-align: center;
-    color: green;
-   
-    
+	padding: 10px;
+	text-align: center;
+	color: green;
+
+
 }
 .loadmore a:visited{
 	color: green;
@@ -131,6 +139,33 @@ h2.title{
 .product-sale h2.title{
 	margin-bottom: 30px;
 }
+.brand-products{
+	margin-bottom: 35px;
+}
+.brand-products .nav-pills>li>a{
+	padding-left: 10px;
+}
+.brand-products .nav-pills>li>a:hover{
+	color: green;
+	background: inherit;
+
+}
+.panel-title{
+	font-weight: 400;
+}
+.sale-off{
+	margin-bottom: 25px;
+}
+/*modal register*/
+.register .modal-header, .register h4, .register .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+ .register .modal-footer {
+      background-color: #f9f9f9;
+  }
 /*footer*/
 .footer-head{
 	background-color: #f5f5f5;
@@ -172,6 +207,12 @@ h2.title{
 .connect .fa-youtube-play:hover{
 	background: #fff;
 }
+.carousel-cell {
+	width: 50%;  
+	margin-right: 10px;
+	border-radius: 5px;
+	counter-increment: carousel-cell;
+}
 
 @media (min-width: 480px){
 	.new_items .col-xs-3, .product-sale .col-xs-3{
@@ -185,8 +226,14 @@ h2.title{
 	.footer-head .col-xs-6:first-child{
 		padding-left: 50px;
 	}
+	.carousel-cell {
+		width: 33.33333%;  
+		margin-right: 10px;
+		border-radius: 5px;
+		counter-increment: carousel-cell;
+	}
 }
-	
+
 
 @media (min-width: 768px){
 	/*header_top*/
@@ -228,9 +275,12 @@ h2.title{
 	.footer-head .col-xs-6:first-child{
 		padding-left: 10px;
 	}
-.navbar-default .navbar-collapse{
-	padding-left: 0;
-}
+	.navbar-default .navbar-collapse{
+		padding-left: 0;
+	}
+	.search_box{
+		margin-left: 15px;
+	}
 	
 }
 
@@ -240,7 +290,17 @@ h2.title{
 	.new_items .col-xs-3, .product-sale .col-xs-3{
 		width: 25%;
 	}
-
+	.carousel-cell {
+		width: 25%;  
+		margin-right: 10px;
+		border-radius: 5px;
+		counter-increment: carousel-cell;
+	}
+	.sign-in .nav.navbar-nav li a{
+	
+	padding-left: 15px;
+	padding-right: 15px;
+}
 }
 
 
