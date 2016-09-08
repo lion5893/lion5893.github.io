@@ -320,7 +320,7 @@ h2.title{
 		padding-bottom: 10px;
 		padding-top: 10px;
 	}
-	.btn-success{
+	.button-menu-mobile {
 		background-color: green;
 		border-color: green;
 		position: absolute;
@@ -328,21 +328,21 @@ h2.title{
 		margin-left: 5px;
 	}
 
-	.modal-dialog{
+	.menu-modal {
 		width: 300px;
 		margin:0;
 		height: 100%;
 	}
 
-	.modal-content{
+	.menu-modal .modal-content{
 		border-radius: 0;
 	}
-	.modal-header {
+	.menu-modal .modal-header {
 		background-color: green;
 		color: #fff;
 	}
 
-	.modal-header .close{
+	.menu-modal .modal-header .close{
 		color: #fff;
 	}
 }
