@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register | Cungphuot</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+	<link href="css/responsive.css" rel="stylesheet">  
+	<link href="css/register.css" rel="stylesheet">  
+</head>
+<body>
+	<header id="header">
+		<div class="header_top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 hidden-xs">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<li><a href="#"><i class="fa fa-phone"></i> +84 123 456 789</a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i> info@domain.com</a></li>           
+							</ul>
+						</div>
+
+					</div>
+					<div class="col-sm-6 hidden-xs">
+						<div class="social-icons ">
+
+							<ul class="nav nav-pills pull-right ">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li> 
+								<li><a href="#"><i class="fa fa-youtube-play"></i></a></li> 
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>  
+								<li><a href="#"><i class="fa fa-instagram"></i></a></li>  
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header_middle">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="logo text-center">
+							<a href="index.html"><img src="images/logophuot.png"  alt=""></a>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="search_box">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm, thương hiệu...">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+								</span>
+							</div>
+
+						</div>                
+					</div>
+					<div class="col-sm-1">
+						<div class="cart">
+							<a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
+						</div>
+					</div>
+					<div class="col-sm-3 hidden-xs">
+						<div class="sign-in pull-right">
+							<ul class="nav navbar-nav ">
+
+								<li><a data-toggle="modal"   data-target="#sign-in"><i class="fa fa-lock"> Đăng Nhập</i></a></li>   
+								<li><a href="#"><i class="fa fa-registered"> Đăng Ký</i></a></li> 
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="header_bottom">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-sm-12 hidden-xs">
+						<nav class="navbar navbar-default">
+
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+
+							</div>
+							<div class="collapse navbar-collapse" id="myNavbar">
+								<ul class="nav navbar-nav shop-menu">
+									<li class=""><a href="#">Trang chủ</a></li>
+									<li class="dropdown">
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#">Sản phẩm <span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Balo Túi Phượt</a></li>
+											<li><a href="#">Quần Áo</a></li>
+											<li><a href="#">Phụ kiện</a></li>
+											<li><a href="#">Mũ bảo hiểm</a></li>
+											<li><a href="#">Đồ bảo hộ moto</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#">Tin tức <span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Tin tức khuyến mãi</a></li>
+											<li><a href="#">Chia sẻ kinh nghiệm</a></li>
+											<li><a href="#">Khám phá</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Video</a></li>
+									<li><a href="#">Giới thiệu</a></li>
+									<li><a href="#">Liên hệ</a></li>
+								</ul>
+							</div>
+
+						</nav><!-- Menu PC -->
+					</div> <!-- Menu Pc End-->				
+					<div class="col-xs-12  visible-xs"><!-- Menu Mobile -->
+						<button type="button" class="btn btn-success button-menu-mobile" data-toggle="modal" data-target="#myModal">&#9776;</button>
+					</div><!-- Menu Mobile End-->
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<form class="form_register" action="account.html" method="get">
+			<ul>
+				<li>
+					<h2>Đăng ký thành viên</h2>
+					<span class="req_notification">* Bắt buộc</span>
+				</li>
+				<li>
+					<label for="name"><span class="req">*</span> Name:</label>
+					<input type="text" name="name" placeholder="Họ tên" id="name" >
+					<span class="error"></span>
+				</li>
+				<li>
+					<label for="password"><span class="req">*</span> Password:</label>
+					<input type="password" name="password" id="password" placeholder="Mật khẩu" >			
+				</li>
+				<li>
+					<label for="confirm_password"><span class="req">*</span>Confirm Password:</label>
+					<input type="password" name="confirm_password" id="confirm_password" placeholder="Xác nhận mật khẩu">					
+				</li>
+				<li>
+					<label for="born"><span class="req">*</span> Ngày Sinh:</label>
+					<input type="date" name="date" id="born" required>
+
+				</li>
+				<li >
+					<label for="gender"><span class="req">*</span> Giới Tính</label>
+					<input class="gender" type="radio" name="gender" value="male" >Nam 
+					<input class="gender" type="radio" name="gender" value="female">Nữ
+					<input class="gender" type="radio" name="gender" value="none" checked>Chưa xác định
+
+				</li>
+
+				<li>
+					<label for="email"><span class="req">*</span> Email:</label>
+					<input type="email" name="email" placeholder="john_doe@example.com" id="email" >
+					<span class="error"></span>
+				</li>
+				<li>
+					<label for="address">Address:</label>
+					<input type="text" name="address" id="address" placeholder="Địa chỉ">
+				</li>
+				<li>
+					<label for="telephone"><span class="req">*</span>Telephone:</label>
+					<input type="text" name="telephone" placeholder="Số điện thoại" id="telephone"><span class="error"></span>					
+				</li>
+
+				<li>
+					<button class="submit" type="submit">Submit Form</button>
+				</li>
+			</ul>
+		</form>
+	</div>
+	<footer id="footer">
+		<div class="footer-head">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-sm-4">
+						<h4>Liên Hệ</h4>
+						<div class="hotline">Hotline: 1900.6996</div>
+						<h4>Địa chỉ: </h4>
+						<p><a href="#">Cơ sở 1: Hà Nội 12</a></p>
+						<p><a href="#">Cơ sở 2: Hà Nội 34</a></p>
+						<p><a href="#">Cơ sở 3: Hà Nội 56</a></p>
+
+					</div>
+					<div class="col-sm-4 hidden-xs">
+						<h4>Hỗ trợ khách hàng</h4>
+						<p><a href="#">Các câu hỏi thường gặp</a></p>
+						<p><a href="#">Chính sách bảo hành</a></p>
+						<p><a href="#">Hướng dẫn đặt hàng</a></p>
+						<p><a href="#">Phương thức vận chuyển</a></p>
+					</div>
+					<div class="col-xs-6 col-sm-4">
+						<h4>Đăng ký nhận tin khuyến mãi</h4>
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Email">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">Đăng ký</button>
+							</span>
+						</div>
+						<div class="connect">
+							<p><b>Kết nối với chúng tôi:</b></p>
+							<a href=""><i class="fa fa-facebook-square fa-2x" ></i></a>
+							<a href=""><i class="fa fa-youtube-play fa-2x"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<p>Copyright @2016 cungphuot <br>
+							Giấy phép kinh doanh số 0106081880 do Sở KH và ĐT TP Hà Nội cấp ngày 06/09/2016
+						</p>
+					</div>
+				</div>
+
+			</div>	
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src = "js/jquery.validate.min.js"></script>
+	<script src="js/register.js"></script>
+</body>
+</html>

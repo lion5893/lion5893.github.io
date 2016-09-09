@@ -1,0 +1,111 @@
+*:focus{
+	outline: none;
+}
+body {
+	font: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+.form_register h2, .form_register label {
+	font-family:Georgia, Times, "Times New Roman", serif;
+
+}
+.form_register{
+	margin-bottom: 25px;
+}
+/*Định dạng cho list*/
+.form_hint, .required_notification {
+	font-size: 12px;
+}
+.form_register ul{
+	padding-left: 0px;
+	list-style-type: none;
+}
+.form_register li{
+	padding: 10px;
+	border-bottom: 1px solid #eee;	
+}
+.form_register li:first-child, .form_register li:last-child{
+	border-bottom: 1px solid #777;
+}
+/*form header*/
+.form_register h2{
+	font-size: 22px;
+	display: inline;
+}
+.req_notification{
+	color: #d45252;
+	margin-top: 5px;
+	float: right;
+}
+.req, .error{
+	color: #d45252;
+}
+/*form input*/
+.form_register label{
+	width: 170px;
+	margin-top: 3px;
+	
+	padding: 3px;
+}
+.form_register input{
+	height: 30px;	
+	width: 220px;
+	padding: 5px 8px;
+}
+.form_register button {
+	margin-left:70px;
+}
+
+.form_register input:focus, .form_register textarea:focus {
+	background: #fff;
+	border:1px solid #555;
+	box-shadow: 0 0 3px #aaa;
+}
+.form_register .gender{
+	width: 12px;
+	height: 13px;
+	margin-left: 5px;
+	margin-right: 5px;
+	
+}
+
+/*button style*/
+button.submit {
+	background: linear-gradient(top, green, #50911e);
+	background: -webkit-linear-gradient(top, green, #50911e);
+	background: -moz-linear-gradient(top, green, #50911e);
+	border: 1px solid #509111;
+	border-bottom: 1px solid #5b992b;
+	border-radius: 3px;	
+	box-shadow: inset 0 1px 0 0 #9fd574;	
+	color: white;
+	font-weight: bold;
+	padding: 6px 20px;
+	text-align: center;
+	text-shadow: 0 -1px 0 #396715;
+}
+button.submit:hover {
+	opacity:.85;
+	cursor: pointer;
+}
+@media (min-width: 480px){
+	
+	.form_register button {
+		margin-left:156px;
+	}
+	
+}
+@media (min-width: 768px){
+	.form_register h2{
+		font-size: 30px;
+	}
+	.form_register ul{
+		padding-left: 40px;
+		list-style-type: none;
+		width: 750px;
+
+	}
+	.form_register{
+		margin-bottom: 50px;
+	}
+}

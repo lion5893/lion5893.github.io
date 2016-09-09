@@ -11,6 +11,7 @@ $(document).ready(function(){
         }
     });
     $(".register-link").click(function(){
-       $('#myModal').hide();
+       $('#myModal').modal('hide');
+      
     });
 });

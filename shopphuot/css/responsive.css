@@ -53,8 +53,12 @@ a {
 	background: inherit;
 }
 .header_bottom .nav.navbar-nav li a {
-    color: #077307;
+    color: #077307; 
 }
+.header_bottom .nav.navbar-nav li ul li a{
+	color: #034a03;
+}
+
 .header_bottom .nav.navbar-nav li a:visited{
 	background: #fff;
 }
@@ -152,19 +156,23 @@ h2.title{
 }
 .panel-title{
 	font-weight: 400;
+	font-size: 15px;
 }
 .sale-off{
 	margin-bottom: 25px;
 }
-/*modal register*/
-.register .modal-header, .register h4, .register .close {
+/*modal sign-in*/
+.sign-in-modal .modal-header, .sign-in-modal h4, .sign-in-modal .close {
       background-color: #5cb85c;
       color:white !important;
       text-align: center;
       font-size: 30px;
   }
- .register .modal-footer {
+ .sign-in-modal .modal-footer {
       background-color: #f9f9f9;
+  }
+  .register-link, .forgot-password{
+  	color: red;
   }
 /*footer*/
 .footer-head{
