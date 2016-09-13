@@ -66,6 +66,14 @@ a {
 	background: #fff;
 }
 /*main-content*/
+.col-xs-3:hover{
+	border: 1px solid #ddd;
+
+}
+.col-xs-3{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 .new_items .col-xs-3, .product-sale .col-xs-3{
 	width: 50%;
 }
