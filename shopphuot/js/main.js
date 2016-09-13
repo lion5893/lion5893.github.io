@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    // Load more item
     $(".new_items .productinfo").slice(0, 6).show();
     $(".loadmore").on('click', function (e) {
         e.preventDefault();
@@ -9,9 +10,14 @@ $(document).ready(function(){
         if($(".new_items .productinfo:hidden").length == 0 ){
             $(".loadmore").hide();
         }
-    });
+    }); 
+    // Hide Modal menu mobile
     $(".register-link").click(function(){
        $('#myModal').modal('hide');
       
     });
+    // Close alert
+    $(".close").click(function(){
+        $("#myAlert").alert("close");
+    })
 });

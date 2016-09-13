@@ -1,0 +1,38 @@
+.breadcrumb{
+	margin-bottom: 10px;
+	border-radius: 0;
+}
+.alert{
+	padding: 8px;
+	border-radius: 0;
+}
+.shopping-cart-item{
+	padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.dropdown-menu{
+	min-width: 48px;
+	border-radius: 0;
+}
+.btn{
+	border-radius: 0;
+}
+.name{
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+.delete{
+	color: #337ab7;
+	line-height: 34px;
+}
+.price{
+	color: green;
+	font-weight: 700;
+}
+.price2 {
+    color: #999;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: line-through;
+}

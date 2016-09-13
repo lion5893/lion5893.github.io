@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Account | Cungphuot</title>
+	<title>Cart | Cungphuot</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-	<link href="css/responsive.css" rel="stylesheet">  
-	<link href="css/register.css" rel="stylesheet">  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />  
+	<link href="css/responsive.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/cart.css">
 </head>
 <body>
 	<header id="header">
@@ -66,7 +66,7 @@
 							<ul class="nav navbar-nav ">
 
 								<li><a data-toggle="modal"   data-target="#sign-in"><i class="fa fa-lock"> Đăng Nhập</i></a></li>   
-								<li><a href="#"><i class="fa fa-registered"> Đăng Ký</i></a></li> 
+								<li><a href="register.html"><i class="fa fa-registered"> Đăng Ký</i></a></li> 
 							</ul>
 						</div>
 					</div>
@@ -92,7 +92,7 @@
 							</div>
 							<div class="collapse navbar-collapse" id="myNavbar">
 								<ul class="nav navbar-nav shop-menu">
-									<li class=""><a href="#">Trang chủ</a></li>
+									<li class=""><a href="index.html">Trang chủ</a></li>
 									<li class="dropdown">
 										<a class="dropdown-toggle" data-toggle="dropdown" href="#">Sản phẩm <span class="caret"></span></a>
 										<ul class="dropdown-menu">
@@ -126,21 +126,129 @@
 			</div>
 		</div>
 	</header>
-	<div class="container">
-		<div class="form_register">
-			<ul>
-				<li>
-					<h2>Đăng ký thành công</h2>				
-				</li>
-				<li>Name: <span class="rs_name"></span></li>
-				<li>Password: <span class="rs_pass"></span></li>
-				<li>Confirm Password: <span class="rs_confirm_pass"></span></li>
-				<li>Ngày Sinh: <span class="rs_born"></span></li>
-				<li>Giới Tính: <span class="rs_gender"></span></li>
-				<li>Email: <span class="rs_email"></span></li>
-				<li>Address: <span class="rs_address"></span></li>
-				<li>Telephone: <span class="rs_phone"></span></li>		
-			</ul>
+	<div class="main-content"> 
+		<div class="container">
+			<ol class="breadcrumb"><!-- breadcrumb -->
+				<li><a href="#">Trang chủ</a></li>
+				<li><a href="#">Giỏ hàng</a></li>				
+			</ol><!-- breadcrumb e -->
+			<div class="alert alert-success" id="myAlert"><!-- alert add to cart -->
+				<a href="#" class="close">&times;</a>
+				Mũ bảo hiểm honda đã được thêm vào giỏ hàng thành công
+			</div><!-- alert add to cart e-->
+			<div class="row"><!-- Cart item -->
+				<div class="col-sm-8">
+					<div class="row shopping-cart-item"><!-- Cart item -->
+						<div class="col-xs-3">
+							<p class="image">
+								<a href="#"><img src="https://phuotstore.net/upload/store/2016-08/day-ao-phan-quang-di-phuot-1.jpg" class="img-responsive"></a>
+							</p>
+						</div>
+						<div class="col-xs-9">
+							<div class="name">
+								<a href="#">Dây phản quang đi phượt (bản 4cm) </a>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="price">79.000đ</div>
+									<div class="price2">100.000đ</div>
+								</div>
+								<div class="col-xs-4">
+									<div class="dropdown">
+										<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											1
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li><a href="#">5</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<a href="" class="delete">Xóa</a>
+								</div>
+							</div>
+						</div>
+					</div><!-- Cart item e-->
+					<div class="row shopping-cart-item"><!-- Cart item -->
+						<div class="col-xs-3">
+							<p class="image">
+								<a href="#"><img src="http://shopta.vn/images/2014/01/huong-dan-chon-balo-du-lich-di-phuot-4.jpg" class="img-responsive"></a>
+							</p>
+						</div>
+						<div class="col-xs-9">
+							<div class="name">
+								<a href="#">Balo thời trang Hàn Quốc Orange Designs vàng đen </a>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="price">150.000đ</div>
+									<div class="price2">300.000đ</div>
+								</div>
+								<div class="col-xs-4">
+									<div class="dropdown">
+										<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											1
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li><a href="#">5</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<a href="" class="delete">Xóa</a>
+								</div>
+							</div>
+						</div>
+					</div><!-- Cart item e-->
+					<div class="row shopping-cart-item"><!-- Cart item -->
+						<div class="col-xs-3">
+							<p class="image">
+								<a href="#"><img src="https://phuotstore.net/upload/store/2016-08/mu-bao-hiem-34-yohe-877a-den-nham-4.jpg" class="img-responsive"></a>
+							</p>
+						</div>
+						<div class="col-xs-9">
+							<div class="name">
+								<a href="#">Mũ bảo hiểm 3/4 Napoli garage đen trắng nhám </a>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="price">799.000đ</div>
+									<div class="price2">1.000.000đ</div>
+								</div>
+								<div class="col-xs-4">
+									<div class="dropdown">
+										<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											1
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li><a href="#">5</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<a href="" class="delete">Xóa</a>
+								</div>
+							</div>
+						</div>
+					</div><!-- Cart item e-->
+				</div>
+				<div class="col-sm-4">
+					
+				</div>
+			</div>
+			
 		</div>
 	</div>
 	<div class="modal fade" id="myModal" role="dialog"><!-- Modal menu mobile-->
@@ -335,7 +443,6 @@
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src = "js/jquery.validate.min.js"></script>
-	<script src="js/register.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
