@@ -36,3 +36,49 @@
     font-weight: 400;
     text-decoration: line-through;
 }
+.row.shopping-cart-item{
+	margin-left: 0;
+	margin-right: 0;
+}
+.fee{
+	border: 1px solid #ddd;
+	padding: 10px;
+	
+}
+.fee span{
+	float: right;
+}
+.fee p{
+	margin-bottom: 13px;
+}
+.fee .panel-body{
+	font-size: 13px;
+}
+.total2{
+	    border-top: 2px solid green;
+	    padding-top: 12px;
+	    line-height: 19px;
+}
+.total2 span{
+	    color: green;
+    font-size: 19px;
+}
+.coupon{
+	border: 1px solid #ddd;
+	margin-top: 15px;
+}
+.coupon .panel-title{
+	padding-left: 12px;
+}
+.panel-default>.panel-heading {
+    background-color: #f7f7f7;
+    }
+ .coupon .btn{
+ 	background: green;
+ 	color: #fff;
+ }
+ .btn-success {
+    color: #fff;
+    background-color: green;
+    border-color: #4cae4c;
+}

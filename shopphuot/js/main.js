@@ -1,9 +1,9 @@
 $(document).ready(function(){
     // Load more item
-    $(".new_items .productinfo").slice(0, 6).show();
+    $(".new_items .productinfo").slice(0, 8).show();
     $(".loadmore").on('click', function (e) {
         e.preventDefault();
-        $(".new_items .productinfo:hidden").slice(0, 2).slideDown();
+        $(".new_items .productinfo:hidden").slice(0, 4).slideDown();
         $('html,body').animate({
             scrollTop: $(this).offset().top
         }, 1000);

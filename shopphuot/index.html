@@ -60,7 +60,7 @@
 					</div>
 					<div class="col-sm-1">
 						<div class="cart">
-							<a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
+							<a href="cart.html"><i class="fa fa-shopping-cart fa-2x"></i></a>
 						</div>
 					</div>
 					<div class="col-sm-3 hidden-xs">
@@ -141,15 +141,15 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
 					<div class="item active">
-						<img src="images/slide1.jpg" alt="Phượt Banner">
+						<a href="#"><img src="images/slide4.jpg" alt="Phượt Banner"></a>
 					</div>
 
 					<div class="item">
-						<img src="images/slide2.jpg" alt="Phượt Banner">
+						<a href="#"><img src="images/slide2.jpg" alt="Phượt Banner"></a>
 					</div>
 
 					<div class="item">
-						<img src="images/slide3.jpg" alt="Phượt Banner">
+						<a href="#"><img src="images/slide3.jpg" alt="Phượt Banner"></a>
 					</div>
 
 				</div>
@@ -282,6 +282,18 @@
 								</ul>
 							</div>
 						</div><!-- brands product end -->
+						<div class="news"><!-- news -->
+							<h2 class="title">Tin tức, Bài viết</h2>
+							<div class="news-name">
+								<ul class="nav nav-pills nav-stacked">
+									<ul class="nav nav-pills nav-stacked">
+										<li><a href="#"> Khuyến mại 50% các sản phẩm balo</a></li>
+										<li><a href="#"> Kinh nghiệm leo núi</a></li>
+										<li><a href="#"> Khám phá Chiềng Yên</a></li>
+									</ul>
+								</ul>
+							</div>
+						</div><!-- news end -->
 						<div class="sale-off"><!-- sale off -->
 							<img src="http://media.tinmoi.vn/2013/02/26/29_12_1361848317_58_za1.jpg" class="img-responsive">
 						</div> <!-- sale off end -->
@@ -1128,14 +1140,14 @@
 					<h4><span class="glyphicon glyphicon-lock"></span> Đăng nhập</h4>
 				</div>
 				<div class="modal-body" style="padding:40px 50px;">
-					<form role="form">
+					<form role="form" >
 						<div class="form-group">
 							<label for="usrname"><span class="glyphicon glyphicon-user"></span> Tài khoản</label>
-							<input type="text" class="form-control" id="usrname" placeholder="Điền email">
+							<input type="email" class="form-control" id="usrname" placeholder="Điền email" required>
 						</div>
 						<div class="form-group">
 							<label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Mật khẩu</label>
-							<input type="text" class="form-control" id="psw" placeholder="Điền password">
+							<input type="password" class="form-control" id="psw" placeholder="Điền password" required>
 						</div>
 						<div class="checkbox">
 							<label><input type="checkbox" value="" checked>Remember me</label>

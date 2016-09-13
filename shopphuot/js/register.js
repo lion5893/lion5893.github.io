@@ -7,7 +7,7 @@ $(document).ready(function(){
 		//validate name
 
 		if($('#name').val().trim() == ''){
-			$('#name').next('span').text(' Name is empty');
+			$('#name').next('span').text(' Tên không được để trống ');
 			isValid = false;
 		} 
 		else{
@@ -17,7 +17,7 @@ $(document).ready(function(){
 		//validate email
 
 		if($('#email').val().match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/) == null){
-			$('#email').next('span').text(' Email is invalid');
+			$('#email').next('span').text(' Email không đúng định dạng');
 			isValid = false;
 		} 
 		else{
@@ -26,7 +26,7 @@ $(document).ready(function(){
 
 		//validate phone
 		if($('#telephone').val().match(/^[0-9-+ ()]{8,17}$/) == null){
-			$('#telephone').next('span').text(' Telephone is invalid');
+			$('#telephone').next('span').text(' SĐT không đúng định dạng');
 			isValid = false;
 		} 
 		else{
@@ -51,12 +51,12 @@ $(document).ready(function(){
 		},
 		messages: {
 			password: {
-			required: "Password is empty",
+			required: "Mật khẩu không được để trống",
 			minlength:	"Mật khẩu từ 5 ký tự trở lên",
 
 		},	
 			confirm_password:{
-				required: "Password is empty",
+				required: "Mật khẩu không được để trống",
 				minlength: "Mật khẩu từ 5 ký tự trở lên",
 				equalTo: "Xác nhận mật khẩu không đúng",
 			}

@@ -37,7 +37,7 @@ body {
 	margin-top: 5px;
 	float: right;
 }
-.req, .error{
+.req, .error1, .error{
 	color: #d45252;
 }
 /*form input*/
@@ -68,6 +68,16 @@ body {
 	margin-right: 5px;
 	
 }
+.error1{
+	font-weight: 700;
+	display: block;
+	width: 220px;
+}
+.form_register label.error{
+	font-family:  "Helvetica Neue",Helvetica,Arial,sans-serif;
+	width: 220px;	
+	display: block
+}
 
 /*button style*/
 button.submit {
@@ -91,9 +101,9 @@ button.submit:hover {
 @media (min-width: 480px){
 	
 	.form_register button {
-		margin-left:156px;
+		margin-left:172px;
 	}
-	
+
 }
 @media (min-width: 768px){
 	.form_register h2{
@@ -107,5 +117,13 @@ button.submit:hover {
 	}
 	.form_register{
 		margin-bottom: 50px;
+	}
+	.error1{
+		display: inline-block;
+		margin-left: 10px;
+	}
+	.form_register label.error{
+		display: inline-block;
+		margin-left: 10px;
 	}
 }

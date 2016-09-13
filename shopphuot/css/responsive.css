@@ -172,6 +172,15 @@ h2.title{
 .sale-off{
 	margin-bottom: 25px;
 }
+.news-name .nav-stacked ul li a:hover{
+	background: inherit;
+}
+.news-name .nav-stacked ul li a{
+	padding-left: 10px;
+}
+.news{
+	margin-bottom: 20px;
+}
 /*modal sign-in*/
 .sign-in-modal .modal-header, .sign-in-modal h4, .sign-in-modal .close {
       background-color: #5cb85c;
