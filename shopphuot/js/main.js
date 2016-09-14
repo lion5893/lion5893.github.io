@@ -20,4 +20,10 @@ $(document).ready(function(){
     $(".close").click(function(){
         $("#myAlert").alert("close");
     })
+    //price sort
+    $('#sl2').slider();
+
+    var RGBChange = function() {
+      $('#RGB').css('background', 'rgb('+r.getValue()+','+g.getValue()+','+b.getValue()+')')
+    };  
 });
