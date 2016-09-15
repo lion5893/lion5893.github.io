@@ -20,10 +20,16 @@ $(document).ready(function(){
     $(".close").click(function(){
         $("#myAlert").alert("close");
     })
+    //delete item in cart
+    $('.delete').click(function(){
+        $(this).parent().parent().parent().parent().hide();
+        // $('.shopping-cart-item').hide();
+    })
     //price sort
     $('#sl2').slider();
 
     var RGBChange = function() {
       $('#RGB').css('background', 'rgb('+r.getValue()+','+g.getValue()+','+b.getValue()+')')
     };  
+
 });
