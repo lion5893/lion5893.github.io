@@ -11,7 +11,7 @@
 	padding: 35px;
 }
 .tooltip-inner {
-	background-color: #FE980F;
+	background-color: green;
 	border-radius: 4px;
 	color: #FFFFFF;
 	max-width: 200px;
@@ -21,12 +21,13 @@
 }
 
 .tooltip.top .tooltip-arrow {
-	border-top-color: #FE980F;
+	border-top-color: green;
 	border-width: 5px 5px 0;
 	bottom: 0;
 	left: 50%;
 	margin-left: -5px;
 }
+
 /**/
 .breadcrumb{
 	margin-bottom: 10px;
@@ -91,16 +92,23 @@ h2.title {
 		width: 33.333333%;
 	}
 }
+@media(min-width: 768px){
+	.slider.slider-horizontal {
+		width: 100% !important;
+	}
+
+
+}
 @media( min-width: 992px){
 	.product-item .col-xs-3{
 		width: 25%;
 	}
 	.sort-by{
-		    margin-left: 90px;
+		margin-left: 90px;
 	}
 }
 @media( min-width: 1200px){
 	.sort-by{
-		    margin-left: 150px;
+		margin-left: 150px;
 	}
 }
