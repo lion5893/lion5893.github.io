@@ -7,6 +7,7 @@ $(document).ready(function(){
         $('html,body').animate({
             scrollTop: $(this).offset().top
         }, 1000);
+        // tắt nút load more khi load hết sản phẩm
         if($(".new_items .productinfo:hidden").length == 0 ){
             $(".loadmore").hide();
         }
