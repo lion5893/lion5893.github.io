@@ -1,4 +1,4 @@
-$(document).ready(function(){
+	$(document).ready(function(){
 
 	//validate
 	$('.form_register').on('submit',function(){
