@@ -1,7 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: namsida
- * Date: 10/19/16
- * Time: 5:16 PM
- */
+$partern = "/^(\/admin)(\/)*((.)*)*/";
+if(preg_match($admin_pattern, $_SERVER["REQUEST_URI"])){
+    include_once (getcwd() . '/app/backend/router.php');
+}else{
+    include (getcwd() . '/app/frontend/index.php');
+}
+?>
