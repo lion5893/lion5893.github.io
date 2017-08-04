@@ -1,6 +1,6 @@
 $(document).ready(function(){
     // Load more item
-    $(".new_items .productinfo").slice(0, 8).show(); //Hiển thị ra 8 sản phẩm ban đầu
+    $(".new_items .productinfo").slice(0, 4).show(); //Hiển thị ra 8 sản phẩm ban đầu
     $(".loadmore").on('click', function (e) {
         e.preventDefault();
         $(".new_items .productinfo:hidden").slice(0, 4).slideDown(); //Hiển thị thêm 4 sản phẩm khi click loadmore
